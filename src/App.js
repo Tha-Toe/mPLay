@@ -48,7 +48,7 @@ const code = new URLSearchParams(window.location.search).get("code")
 function App() {
 
   const CLIENT_ID = "2614e21fa9364cc690d8562664d222b3";
-  const REDIRECT_URI = "http://localhost:3000";
+  const REDIRECT_URI = "https://musicplay.vercel.app/";
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
   const RESPONSE_TYPE = "code";
 
