@@ -1,0 +1,140 @@
+.dMainContainer {
+    width: 100%;
+}
+.dmainsmallcontainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+}
+/*
+#919303
+#ffd20a
+*/
+.dHeader {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.dHeaderButton {
+    width: 10%;
+    font-size: 20px;
+    cursor: pointer;
+}
+.dHeaderName {
+    width: 90%;
+    margin-right: 10%;
+    font-size: 30px;
+}
+
+
+.dNote {
+    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-bottom: 20px;
+}
+.dNoteNumber {
+    margin-right: 10px;
+    font-size: 40px;
+}
+
+.dNoteText {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+.dNoteTextOne {
+    font-size: 20px;
+}
+.dNoteTextTwo {
+    font-size: 12px;
+    color: #d1d1d1;
+}
+
+
+
+.dListContainer {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1D1A48;
+    border-radius: 10px;   
+}
+.dListPlayAll{
+    width: 90%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.dList {    
+    width: 90%;
+}
+.dListTempo {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.dListId {
+    width: 30px;
+    text-align:center;
+}
+.dListChild {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+}
+.dListImage {
+    width: 60px;
+    border-radius: 5px;
+}
+.dListName {
+    margin-left: 20px;
+}
+.dListDetail {
+    font-size: 30px;
+}
+
+@media(max-width: 720px) {
+    .dHeader {
+        width: 90%;
+    }
+    .dHeaderName {
+        font-size: 20px;
+    }
+    .dListId {
+        width: 30px;
+    }
+    .dListChild {
+        width: 80%;
+    }
+    .dListImage {
+        width: 50px;
+    }
+    .dNote {
+        width: 80%;
+    }
+    .dListName {
+        margin-left: 10px;
+    }
+    .dListContainer {
+        width: 80%;
+    }
+    .dListTempo {
+        height: 50px;
+    }
+}

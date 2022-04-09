@@ -1,0 +1,42 @@
+.albumContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.alHead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 50%;
+}
+
+.alItemContainer {
+    width: 50%;
+    overflow: auto;
+    cursor: grab;
+}
+
+.alInnerItemContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.alItemContainer::-webkit-scrollbar{
+    display: none;
+}
+
+
+@media (max-width: 720px) {
+    .alHead {
+        width: 90%;
+    }
+    .alItemContainer {
+        width: 90%;
+    }
+}

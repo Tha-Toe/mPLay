@@ -1,0 +1,27 @@
+.headerContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.headerText {
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.picn {
+    font-size: 50px;
+    color: #00ffae;
+    margin-right: 10px;
+}
+
+@media (max-width: 720px) {
+    .headerText {
+        font-size: 25px;
+    }
+}

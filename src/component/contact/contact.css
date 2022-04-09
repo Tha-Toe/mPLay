@@ -1,0 +1,133 @@
+.contactContainer {
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.contactHeader {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.addressContainer {
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.addressNote {
+    color: #fff;
+}
+.addressIcon {
+    margin-right: 10px;
+    color: #00FFAE;
+    font-size: 24px;
+}
+.addressLink:hover {
+    color: blue;
+}
+
+.contactMid {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.contactLeft {
+    width: 50%;
+}
+.contactRight {
+    width: 50%;
+}
+.contactSticker {
+    width: 100%;
+}
+
+
+.cBg1 {
+    height: 400px;
+    width: 400px;
+    background-color: #5d5c6e;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 400px;
+    z-index: -1;
+  }
+  .cBg2 {
+    height: 300px;
+    width: 300px;
+    background-color: #313047;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 300px;
+  
+  }
+  .cBg3 {
+    height: 200px;
+    width: 200px;
+    background-color: #23213b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 200px;
+  
+  }
+  
+  
+  .cAnimation {
+    animation: canimation 1s ease-in ;
+  }
+  @keyframes canimation {
+    from {opacity: 0; left: -400px}
+    to {opacity:1; left: 0}
+  }
+  
+
+@media (max-width: 720px) {
+    .contactMid {
+        width: 90%;
+    }
+    .contactHeader {
+        font-size: 20px;
+    }
+    .addressNote {
+        font-size: 14px;
+    }
+    .cBg1 {
+        height: 300px;
+        width: 200px;
+        background-color: #5d5c6e;
+      }
+      .cBg2 {
+        height: 200px;
+        width: 150px;
+        background-color: #313047;
+      
+      }
+      .cBg3 {
+        height: 100px;
+        width: 100px;
+        background-color: #23213b;
+      }
+}

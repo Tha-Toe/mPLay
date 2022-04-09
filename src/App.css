@@ -1,38 +1,248 @@
-.App {
-  text-align: center;
+body {
+  background-color: #110F2F;
+  color: #fff;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.lgContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.lgH {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.lgMHeader{
+  font-size: 40px;
+  padding: 5px 10px 5px 10px;
+  /*background: linear-gradient(45deg,rgb(252, 28, 166), rgb(17, 145, 250));*/
+  border-radius: 10px;
+  color: #fff;
+  letter-spacing: 1rem;
+  font-weight: 500;
+}
+.lgHeader {
+  /*background: -webkit-linear-gradient(rgb(252, 28, 166), rgb(17, 145, 250));*/
+  background-color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 18px;
+  letter-spacing: .2rem;
+  font-weight: 600;
+  border-bottom: 2px solid aqua;
+}
+
+.lgImgContainer {
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.lgImg {
+  width: 250px;
+  border-radius: 50px;
+  margin-bottom: 50px;
+  box-shadow:  4px 4px 18px -4px rgb(252, 28, 166), -4px -4px 18px -4px rgb(17, 145, 250);
+  margin-bottom: 0;
+}
+.lgButtonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.lgButton {
+  background-color: #19CB94;
+  background-color: #1FDF64;
+  border: none;
+  height: 40px;
+  width: 150px;
+  border-radius: 10px;
+  box-shadow:  5px 10px 10px -2px #000;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.lgA, .lgA:hover, .lgA:focus, .lgA:active {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+}
+.lgWarn {
+  height: 10%;
+}
+.lgBg1 {
+  height: 600px;
+  width: 600px;
+  background-color: #5d5c6e;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 400px;
+  z-index: -1;
+}
+.lgBg2 {
+  height: 450px;
+  width: 450px;
+  background-color: #313047;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 300px;
+
+}
+.lgBg3 {
+  height: 300px;
+  width: 300px;
+  background-color: #23213b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 200px;
+
+}
+
+
+.lgAnimation {
+  animation: lganimation 1s ease-in ;
+}
+@keyframes lganimation {
+  from {opacity: 0; left: -400px}
+  to {opacity:1; left: 0}
+}
+
+
+.lgHAnimation {
+  position: relative;
+  animation: lghanimation 1s ease-in ;
+}
+@keyframes lghanimation {
+  from {opacity: 0; top: -200px}
+  to {opacity: 1; top: 0}
+}
+
+.lgImgAnimation {
+  position: relative;
+  animation: lgimganimation 1.5s ease-in ;
+}
+@keyframes lgimganimation {
+  0% {opacity: 0; width: 0;}
+  60% {opacity: 0; width: 0;}
+  100% {opacity: 1;width: 250px;}
+}
+
+
+.lgbAnimation {
+  position: relative;
+  animation: lgbanimation 1.7s ease-in ;
+  position: relative;
+}
+@keyframes lgbanimation {
+  0% {opacity: 0; top: -200px;}
+  80% {opacity: 0; top: -200px;}
+  100% {opacity: 1; top: 0;}
+}
+
+@media(max-width: 720px) {
+  .lgImg {
+    width: 200px;
   }
-  to {
-    transform: rotate(360deg);
+  .lgMHeader {
+    font-size: 30px;
+  }
+  .lgHeader {
+    font-size: 10px;
+  }
+  .lgWarn {
+    font-size: 12px;
+  }
+  .lgBg1 {
+    height: 450px;
+    width: 450px;
+    background-color: #5d5c6e;
+  }
+  .lgBg2 {
+    height: 350px;
+    width: 350px;
+    background-color: #313047;
+  
+  }
+  .lgBg3 {
+    height: 250px;
+    width: 250px;
+    background-color: #23213b;
+  }
+}
+
+@media(max-width: 500px) {
+  .lgContainer {
+    height: 100vh;
+    width: 100vw;
+  }
+  .lgH {
+    height: 25%;
+  }
+  .lgButtonContainer {
+    height: 20%;
+  }
+  .lgImg {
+    width: 200px;
+  }
+  .lgBg1 {
+    height: 350px;
+    width: 350px;
+    background-color: #5d5c6e;
+  }
+  .lgBg2 {
+    height: 250px;
+    width: 250px;
+    background-color: #313047;
+  
+  }
+  .lgBg3 {
+    height: 150px;
+    width: 150px;
+    background-color: #23213b;
+  }
+}
+@media(max-width: 320px) {
+  .lgBg1 {
+    height: 300px;
+    width: 300px;
+    background-color: #5d5c6e;
+  }
+  .lgBg2 {
+    height: 200px;
+    width: 200px;
+    background-color: #313047;
+  
+  }
+  .lgBg3 {
+    height: 100px;
+    width: 100px;
+    background-color: #23213b;
   }
 }
