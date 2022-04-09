@@ -114,13 +114,14 @@
         width: 90%;
     }
     .dHeaderName {
-        font-size: 15px;
+        font-size: 20px;
     }
     .dListId {
         width: 30px;
     }
     .dListChild {
         width: 80%;
+        font-size: 15px;
     }
     .dListImage {
         width: 50px;

@@ -8,6 +8,7 @@
     background-color: #110F2F;
     position: fixed;
     bottom: 0;
+    user-select: none;
 }
 .footerCt {
     width: 50%;
