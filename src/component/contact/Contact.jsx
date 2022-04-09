@@ -23,7 +23,7 @@ export default function Contact () {
         <div className="contactContainer">
             <div className="contactHeader">Contact Developer</div>
             <div className="contactMid">
-                <div className="contactLeft">
+                <div className={`${"contactLeft"} ${viewed? "cLAnimation" : ""}`}>
                     <div className="addressContainer">
                         <FontAwesomeIcon icon = {faUser} className="addressIcon" />
                             <div className="addressNote">Tha Toe Saung</div>
@@ -49,11 +49,12 @@ export default function Contact () {
                             <a href="https://www.facebook.com/tha.toe.906" className="addressNote addressLink">Tha Toe</a>
                     </div>
                 </div>
-                <div className="contactRight"><img src="contactSticker.svg" className="contactSticker"/></div>
+                <div className={`${"contactRight"} ${viewed? "cRAnimation" : ""}`}><img src="contactSticker.svg" className="contactSticker"/></div>
             </div>
             <div className={`${"cBg1"} ${viewed? "cAnimation" : ""}`} ref={lgRef}>
-          <div className="cBg2">
-            <div className="cBg3"></div>
+                <div className="cBg2">
+                <div className="cBg3">
+            </div>
           </div>
         </div>
         </div>

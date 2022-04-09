@@ -40,12 +40,36 @@
     align-items: center;
     justify-content: space-between;
 }
+
+
 .contactLeft {
     width: 50%;
 }
+.cLAnimation {
+  position: relative;
+  animation: clanimation 2s ease-in ;
+}
+@keyframes clanimation {
+  0% {opacity: 0; left: -200px;}
+  50% {opacity:0; left: -200px;}
+  100% {opacity: 1; left: 0;}
+}
+
+
 .contactRight {
     width: 50%;
+    position: relative;
 }
+.cRAnimation {
+  animation: cranimation 2s ease-in ;
+}
+@keyframes cranimation {
+  0% {opacity: 0; right: -200px;}
+  50% {opacity:0; right: -200px;}
+  100% {opacity: 1; right: 0;}
+}
+
+
 .contactSticker {
     width: 100%;
 }
@@ -91,7 +115,6 @@
     align-items: center;
     justify-content: center;
     border-radius: 200px;
-  
   }
   
   
@@ -99,15 +122,31 @@
     animation: canimation 1s ease-in ;
   }
   @keyframes canimation {
-    from {opacity: 0; left: -400px}
-    to {opacity:1; left: 0}
+    from {opacity: 0; height: 0px;width: 0px;}
+    to {opacity:1; height: 400px;width: 400px;}
   }
   
 
 @media (max-width: 720px) {
+
     .contactMid {
-        width: 90%;
-    }
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: auto;
+      margin-bottom: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      
+  }
     .contactHeader {
         font-size: 20px;
     }
@@ -118,6 +157,13 @@
         height: 300px;
         width: 200px;
         background-color: #5d5c6e;
+      }
+      .cAnimation {
+        animation: canimation 1s ease-in ;
+      }
+      @keyframes canimation {
+        from {opacity: 0; height: 0px;width: 0px;}
+        to {opacity:1; height: 300px;width: 200px;}
       }
       .cBg2 {
         height: 200px;

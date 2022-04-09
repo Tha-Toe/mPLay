@@ -42,4 +42,7 @@
     .seContainer {
         width: 90%;
     }
+    .searchBar {
+        font-size: 16px;
+    }
 }

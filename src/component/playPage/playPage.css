@@ -41,7 +41,7 @@
     align-items: center;
 }
 .songName {
-    font-size: 25px;
+    font-size: 23px;
 }
 .songArtic {
     color: #d1d1d1;
@@ -148,8 +148,19 @@
     .player {
         width: 90%;
     }
+
     .playCardContainer {
         width: 80%;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
     }
     .progressBar {
         width: 90%;
@@ -163,7 +174,17 @@
     }
     .alertContainer {
         width: 450px;
-    }
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+    }}
     .alertText {
         font-size: 15px;
         font-weight: 600;
@@ -191,6 +212,12 @@
     }
     .alertDelete {
         font-size: 15px;
+    }
+    .songName {
+        font-size: 20px;
+    }
+    .songArtic {
+        font-size: 17px;
     }
 }
 @media (max-width: 350px) {
